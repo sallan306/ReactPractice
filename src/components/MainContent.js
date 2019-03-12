@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import ContactCardContainer from './ContactCard/ContactCardContainer';
 import JokeContainer from './Joke/JokeContainer';
 import ToDoContainer from './ToDo/ToDoContainer';
+import Navbar from "./HeaderFooter/Navbar"
 
 class MainContent extends Component {
 
@@ -9,12 +10,15 @@ class MainContent extends Component {
     super()
     this.state = {
       loggedIn: false,
-
+      currentContent: "none"
     }
   }
   render() {
-
-
+    this.clickNav = (selected) => {
+      this.setState({
+        currentContent: selected
+      })
+    }
   
     
     const clickLogIn = () => {
@@ -23,11 +27,13 @@ class MainContent extends Component {
       })
     }
     if(this.state.loggedIn) {
+
       return(
         <div className="mainContent">
-          <ContactCardContainer/>
-          <JokeContainer/>
-          <ToDoContainer/>
+          <Navbar clickNav={this.clickNav}/>
+          <ContactCardContainer currentContent={this.state.currentContent}/>
+          <JokeContainer currentContent={this.state.currentContent}/>
+          <ToDoContainer currentContent={this.state.currentContent}/>
         </div>
       )
     }

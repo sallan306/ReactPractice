@@ -52,7 +52,7 @@ class ToDoContainer extends Component {
                       checkBoxInfo={toDoItems.checkBoxInfo}
                     />)
     return (
-      <div className="toDoContainer">
+      <div className="toDoContainer" style={{display: (this.props.currentContent === "todo") ? "block" : "none"}}>
         <h1>To Do List</h1>
         {allToDoItems}
         {this.state.newToDo}

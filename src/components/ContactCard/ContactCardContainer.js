@@ -20,7 +20,7 @@ class ContactCardContainer extends Component {
                       phone={contact.phone}
                     />)
     return (
-        <div className="contactCardContainer">
+        <div className="contactCardContainer" style={{display: (this.props.currentContent === "contact") ? "block" : "none"}}>
             <h1>Contact Cards</h1>
             {allContacts}
         </div>

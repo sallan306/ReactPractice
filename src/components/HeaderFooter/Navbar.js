@@ -32,6 +32,10 @@ class Navbar extends Component {
       <div className="navbar">
         <header className="header">
             {"good " + this.timeOfDay() + "! It is currently "+ this.state.currentTime}
+            <br/>
+            <button onClick={() => this.props.clickNav("contact")}>Contacts</button>
+            <button onClick={() => this.props.clickNav("joke")}>Jokes</button>
+            <button onClick={() => this.props.clickNav("todo")}>ToDo</button>
         </header>
       </div>
     );

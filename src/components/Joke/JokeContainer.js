@@ -19,7 +19,7 @@ class JokeContainer extends Component {
                     punchline={joke.punchline}
                   />)
     return (
-        <div className="jokeContainer">
+        <div className="jokeContainer" style={{display: (this.props.currentContent === "joke") ? "block" : "none"}}>
             <h1>Jokes</h1>
             {allJokes}
         </div>
