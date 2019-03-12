@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import ContactCardContainer from './ContactCardContainer';
-import JokeContainer from './JokeContainer';
-import ToDoContainer from './ToDoContainer';
+import ContactCardContainer from './ContactCard/ContactCardContainer';
+import JokeContainer from './Joke/JokeContainer';
+import ToDoContainer from './ToDo/ToDoContainer';
 
 class MainContent extends Component {
 

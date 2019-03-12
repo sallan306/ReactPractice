@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import Navbar from "./components/Navbar"
+import Navbar from "./components/HeaderFooter/Navbar"
 import MainContent from './components/MainContent';
-import Footer from "./components/Footer"
+import Footer from "./components/HeaderFooter/Footer"
 import './App.css';
 
 
@@ -9,14 +9,14 @@ class App extends Component {
   constructor() {
     super()
     this.state = {
-      navBackground: "red"
+      
     }
   }
 
   render() {
     return (
       <div className="App">
-        <Navbar background={this.state.navBackground}/>
+        <Navbar/>
         <MainContent/>
         <Footer/>
       </div>
