@@ -1,31 +1,41 @@
 body {
-  text-align: center
+  text-align: center;
+  margin: 0;
+}
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
 }
 header {
   background: red;
   width: 100%;
   margin: 0;
-  height: 100px;
+  height: 80px;
   text-align: "center";
   font-size: 30px
 }
 footer {
   background: black;
-  color: white
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 .mainContent {
   background: rgb(84, 168, 189, .4);
-  padding: 10px;
+  padding: 0px;
 }
 .loggedOut {
   background: pink;
-  width: 50%;
-  margin:15% 10px 15% 25%;
+  width: 50vw;
+  margin-left: 25vw;
+  height: 20vh;
+  margin-top: 40vh;
+  /* margin:15% 10px 15% 25%; */
   border-style: solid;
   border-width: 2px; 
   border-color: black;
-  padding-top: 25px;
-  padding-bottom: 25px;
 }
 .contactCard {
   background: white;
@@ -60,6 +70,10 @@ footer {
   padding-bottom: 10px;
   background: gray;
 }
+
+.contactCardContainer, .jokeContainer, .toDoContainer, .starwars {
+  margin-top: 80px;
+}
 .taskName {
   width: 60%;
 }
@@ -68,4 +82,12 @@ footer {
 }
 .contactInputLabel {
   width: 100%;
+}
+.loadingScreen {
+  text-align: left;
+  margin-left: 45vw;
+  height: 58vh;
+  margin-top: 0;
+  padding-top: 40vh;
+  margin-bottom: 0px;
 }

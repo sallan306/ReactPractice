@@ -36,6 +36,8 @@ class Navbar extends Component {
             <button onClick={() => this.props.clickNav("contact")}>Contacts</button>
             <button onClick={() => this.props.clickNav("joke")}>Jokes</button>
             <button onClick={() => this.props.clickNav("todo")}>ToDo</button>
+            <button onClick={() => this.props.clickNav("starwars")}>StarWars</button>
+            <button onClick={() => this.props.clickNav("logout")}>Log Out</button>
         </header>
       </div>
     );
